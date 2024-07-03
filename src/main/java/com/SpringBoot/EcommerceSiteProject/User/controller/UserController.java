@@ -21,6 +21,11 @@ public class UserController {
         return "TestApi works.";
     }
 
+    @GetMapping("/check")
+    public String Rewrite(){
+            return "hevin is here";
+    }
+
 
     @PostMapping("/register")
     public ResponseEntity<String> register(@RequestBody User user) {
